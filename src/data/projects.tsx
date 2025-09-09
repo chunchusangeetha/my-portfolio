@@ -1,9 +1,16 @@
 // data/projects.ts
 export const projects = [
   {
-    title: "Todo App",
-    description: "A simple task management app using Node.js and MongoDB.",
-    link: "https://your-todo-app-link",
+    title: "Kanban Board",
+    description:
+      "A personal task board to organize tasks across different stages.",
+    ProjectRepository: "https://github.com/chunchusangeetha/kanban-board", 
+    link: "https://kanban-board-neon-seven.vercel.app/",
   },
-  // more projects...
+  {
+    title: "Kanban Board",
+    description:
+      "A personal task board to organize tasks across different stages.",
+    link: "https://kanban-board-neon-seven.vercel.app/",
+  },
 ];
