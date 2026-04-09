@@ -9,7 +9,6 @@ export default function Contact() {
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
 
-        {/* LEFT SIDE CONTACT INFO */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -21,28 +20,28 @@ export default function Contact() {
           </h1>
 
           <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-            I'm always open to discussing new opportunities, interesting
-            projects, or collaborations. Feel free to reach out if you'd
+            I&apos;m always open to discussing new opportunities, interesting
+            projects, or collaborations. Feel free to reach out if you&apos;d
             like to work together.
           </p>
 
           <div className="space-y-4">
 
             <p className="text-gray-700 dark:text-gray-300">
-              📧 Email: 
+               Email: 
               <span className="ml-2 font-medium">
-                yourmail@example.com
+                geethachunchu2841@gmail.com
               </span>
             </p>
 
             <p className="text-gray-700 dark:text-gray-300">
               LinkedIn:
               <a
-                href="https://linkedin.com/in/your-linkedin"
+                href="https://www.linkedin.com/in/chunchu-sangeethaa-996355224/"
                 target="_blank"
                 className="ml-2 text-blue-600 hover:underline"
               >
-                linkedin.com/in/your-linkedin
+               www.linkedin.com/in/chunchu-sangeethaa-996355224/
               </a>
             </p>
 

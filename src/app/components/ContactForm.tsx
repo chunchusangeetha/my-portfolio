@@ -4,27 +4,29 @@ import React, { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_yjjl57f",
-        "template_ye07rwk",
-        e.currentTarget,
-        "A4pYo85Ush2g6hgXP"
-      )
-      .then(
-        () => {
-          alert("Message Sent Successfully!");
-        },
-        () => {
-          alert("Failed to send message, try again!");
-        }
-      );
+  const form = e.currentTarget; 
 
-    e.currentTarget.reset();
-  };
+  emailjs
+    .sendForm(
+      "service_yjjl57f",
+      "template_ye07rwk",
+      form,
+      "A4pYo85Ush2g6hgXP"
+    )
+    .then(
+      () => {
+        alert("Message Sent Successfully!");
+        form.reset(); 
+      },
+      () => {
+        alert("Failed to send message, try again!");
+      }
+    );
+};
 
   return (
     <form onSubmit={sendEmail} className="space-y-5">
@@ -70,10 +72,11 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+        className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition disabled:opacity-50"
       >
-        Send Message
+         Send Message
       </button>
+
 
     </form>
   );

@@ -3,7 +3,7 @@ export const projects = [
     title: "User Dashboard Application",
     description:
       "A responsive dashboard application with user management, search, filtering, and CRUD operations using REST APIs.",
-    image: "/projects/dashboard.png",
+    image: "/projects/user-dashboard.png",
     github: "https://github.com/chunchusangeetha/user-dashboard-react.git",
     live: "https://user-dashboard-react-plum.vercel.app/",
     tech: ["React", "Tailwind", "REST API"],
@@ -26,13 +26,13 @@ export const projects = [
     live: "https://shoppers-stop-topaz.vercel.app/login",
     tech: ["React", "CSS", "JavaScript"],
   },
-  {
-    title: "Task Management App",
-    description:
-      "A task management application that allows users to organize daily tasks and manage workflow efficiently.",
-    image: "/projects/tasks.png",
-    github: "https://github.com/chunchusangeetha/REACT_TASK.git",
-    live: "https://react-task-beta-opal.vercel.app/",
-    tech: ["React", "JavaScript", "CSS"],
-  },
+ {
+  title: "Data Artisans Dashboard",
+  description:
+    "A responsive business dashboard application showcasing data services like Data Engineering, Cloud Solutions, and AI. Built with modern UI design and reusable components for an intuitive user experience.",
+  image: "/projects/tasks.png",
+  github: "https://github.com/chunchusangeetha/REACT_TASK.git",
+  live: "https://react-task-beta-opal.vercel.app/",
+  tech: ["React", "JavaScript", "CSS"],
+}
 ];

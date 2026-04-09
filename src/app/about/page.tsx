@@ -24,7 +24,7 @@ export default function About() {
           className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300"
         >
           <p>
-            Hi, I'm <span className="font-semibold">Ch Sangeetha</span>, a 
+            Hi, I&apos;m <span className="font-semibold">Ch Sangeetha</span>, a 
             <span className="font-semibold"> Frontend Developer with nearly 4 years of experience</span> 
             specializing in building scalable, high-performance, and user-centric web applications.
           </p>
@@ -63,7 +63,7 @@ export default function About() {
           </a>
 
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/chunchu-sangeethaa-996355224/"
             target="_blank"
             className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
