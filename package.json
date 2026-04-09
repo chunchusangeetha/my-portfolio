@@ -12,10 +12,10 @@
     "@emailjs/browser": "^4.4.1",
     "framer-motion": "^12.23.6",
     "lucide-react": "^1.8.0",
-    "next": "15.4.2",
+    "next": "^16.2.3",
     "node": "^25.9.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
