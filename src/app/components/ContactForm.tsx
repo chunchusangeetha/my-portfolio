@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -9,19 +9,17 @@ export default function ContactForm() {
 
     emailjs
       .sendForm(
-        'service_yjjl57f',        // Replace with your actual service ID
-        'template_ye07rwk',       // Replace with your actual template ID
+        "service_yjjl57f",
+        "template_ye07rwk",
         e.currentTarget,
-        'A4pYo85Ush2g6hgXP'       // Replace with your actual user/public key
+        "A4pYo85Ush2g6hgXP"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          alert('Message Sent Successfully!');
+        () => {
+          alert("Message Sent Successfully!");
         },
-        (error) => {
-          console.error(error.text);
-          alert('Failed to send message, try again!');
+        () => {
+          alert("Failed to send message, try again!");
         }
       );
 
@@ -29,47 +27,54 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={sendEmail} className="flex flex-col gap-4">
-      <label className="flex flex-col">
-        <span className="mb-1 font-semibold text-black">Your Name</span>
+    <form onSubmit={sendEmail} className="space-y-5">
+
+      <div>
+        <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
+          Your Name
+        </label>
         <input
           type="text"
           name="name"
-          placeholder="Enter your name"
           required
-          className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Enter your name"
+          className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
         />
-      </label>
+      </div>
 
-      <label className="flex flex-col">
-        <span className="mb-1 font-semibold text-black">Your Email</span>
+      <div>
+        <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
+          Your Email
+        </label>
         <input
           type="email"
           name="email"
-          placeholder="Enter your email"
           required
-          className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Enter your email"
+          className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
         />
-      </label>
+      </div>
 
-
-      <label className="flex flex-col">
-        <span className="mb-1 font-semibold text-black">Your Message</span>
+      <div>
+        <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
+          Message
+        </label>
         <textarea
           name="message"
           rows={5}
-          placeholder="Type your message here"
           required
-          className="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-        ></textarea>
-      </label>
+          placeholder="Write your message..."
+          className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+        />
+      </div>
 
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
       >
         Send Message
       </button>
+
     </form>
   );
 }
